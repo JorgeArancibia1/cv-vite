@@ -9,6 +9,7 @@
   align-items: center; /* Alinear verticalmente */
   justify-content: space-evenly; /* Alinear horizontalmente */
   height: 40vh;
+  width: 100vw;
 }
 
 .box1 {

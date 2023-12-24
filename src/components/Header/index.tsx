@@ -1,4 +1,3 @@
-import './avatar.css'
 
 const Header = () => {
   return (
