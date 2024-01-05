@@ -18,3 +18,20 @@ body .generalContainer {
   width: 90vw;
   border-radius: 5px;
 }
+
+.b {
+  border: 1px solid black;
+}
+
+.b-red {
+  border: 1px solid red;
+}
+
+.b-blue {
+  border: 1px solid blue;
+}
+
+/* GRID */
+.d-grid {
+  display: grid;
+}

@@ -1,0 +1,24 @@
+/* Arreglo del titulo con icono */
+
+.dp-row {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.dp-title {
+  /* grid-area: title; */
+  width: fit-content;
+  justify-self: start;
+  font-size: 1.5em;
+}
+
+.dp-content {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  align-items: start;
+  justify-items: start;
+}

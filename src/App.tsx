@@ -7,6 +7,7 @@ import './index.css'
 import { Studies } from './components/Studies';
 import { Skills } from "./components/Skills"
 import { Certifications } from "./components/Certifications"
+import ModuleTemplate from "./components/ModuleTemplate"
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
     <div className="generalContainer">
       <Header />
       <PersonalData />
-      <Presentation />
+      <ModuleTemplate title='Datos personales'>
+        <Presentation />
+      </ModuleTemplate>
       <Experience />
       <Philosophy />
       <Studies />

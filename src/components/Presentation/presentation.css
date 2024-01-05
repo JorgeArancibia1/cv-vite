@@ -1,5 +1,6 @@
-.presentation {
-  border: 1px solid blue;
+.presentation-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
   /* width: 100vw;
   height: 30vh; */
 }
