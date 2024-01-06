@@ -1,6 +1,7 @@
-.personalDataContainer {
-  /* background-color: black; */
-  border: 1px solid red;
+.pd-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  gap: 5px;
   /* width: 100vw;
   height: 30vh; */
 }

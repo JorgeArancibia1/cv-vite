@@ -1,24 +1,43 @@
-/* Arreglo del titulo con icono */
 
-.dp-row {
+.section-template {
+  min-height: 20vh;
+}
+
+.template-row {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
+  margin: 20px 0;
 }
 
-.dp-title {
+.template-title {
   /* grid-area: title; */
   width: fit-content;
   justify-self: start;
   font-size: 1.5em;
+  margin: 0;
 }
 
-.dp-content {
+.content-template {
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   align-items: start;
   justify-items: start;
+  gap: 20px 0;
+}
+
+.template-line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.template-line {
+  width: 90%;
+  height: 2px;
+  background-color: #0093D3;
+  border-radius: 150px;
+  justify-self: center;
 }

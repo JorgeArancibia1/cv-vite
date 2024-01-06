@@ -1,32 +1,9 @@
-import './Presentation.css'
-import { FcPhone } from "react-icons/fc";
-import { CgMail } from "react-icons/cg";
-import { FaLinkedin } from "react-icons/fa";
-import { TfiGithub } from "react-icons/tfi";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaFlag } from "react-icons/fa";
+import './index.css'
 
 export const Presentation = () => {
   return (
-    <div className="presentation-container">
-      {/* Telefono */}
-      <FcPhone />
-      <span>(+56) 9 356 439 91</span>
-      {/* Email */}
-      <CgMail color='darkred' />
-      <span>jorge.arancibia.jeal@gmail.com</span>
-      {/* Linkedin */}
-      <FaLinkedin />
-      <a href="https://www.linkedin.com/in/jaranci/">https://www.linkedin.com/in/jaranci</a>
-      {/* Github */}
-      <TfiGithub color='purple' />
-      <a href="https://www.github.com/JorgeArancibia1/">https://www.github.com/JorgeArancibia1</a>
-      {/* Ubicación */}
-      <FaLocationDot />
-      <span>Santiago - Chile</span>
-      {/* Nacionalidad */}
-      <FaFlag />
-      <span>Chileno</span>
-    </div>
+    <article className="presentation-container">
+      <p className='presentation-text'>Frontend developer, Ingeniero en mecánica automotriz y titulado de la carrera Analista programador de INACAP. Capacitado para trabajar como desarrollador web, con aspiraciones de perfeccionar conocimientos principalmente en el área frontend. Apasionado por la programación y actualmente buscando oportunidades para seguir creciendo en el área. Me encanta Javascript ♡.</p>
+    </article>
   )
 }

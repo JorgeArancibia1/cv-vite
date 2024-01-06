@@ -14,10 +14,14 @@ function App() {
   return (
     <div className="generalContainer">
       <Header />
-      <PersonalData />
-      <ModuleTemplate title='Datos personales'>
+      <ModuleTemplate title='Datos personales' hidden={false}>
+        <PersonalData />
+      </ModuleTemplate>
+
+      <ModuleTemplate title='Presentación' hidden={false}>
         <Presentation />
       </ModuleTemplate>
+
       <Experience />
       <Philosophy />
       <Studies />
