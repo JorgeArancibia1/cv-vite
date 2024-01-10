@@ -1,9 +1,13 @@
 import { Avatar } from "../Avatar";
 import "./index.css";
 
-const Header = () => {
+type HeaderProps = {
+	className: string;
+};
+
+const Header = ({className}: HeaderProps) => {
 	return (
-		<section className='container-fluid m-auto p-0'>
+		<section className={`${className}`}>
 			<div className='avatar-container'>
 				<Avatar />
 			</div>

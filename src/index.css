@@ -1,22 +1,30 @@
 body {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
 
 body .generalContainer {
-  margin-top: 40px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(300px,100%)
+    100vw
   );
+  grid-template-areas:
+    "header"
+    "dp"
+    "presentation"
+    "experience"
+    "philosophy"
+    "education"
+    "skills"
+    "certificates";
   /* grid-auto-rows: 300px; */
-  border: 1px solid black;
   background-color: #FAFAFA;
-  width: 90vw;
   border-radius: 5px;
+  width: 100vw;
 }
 
 @media (min-width: 1024px) {
@@ -26,6 +34,38 @@ body .generalContainer {
       minmax(300px,50%)
     );
   }
+}
+
+.header {
+  grid-area: header;
+}
+
+.dp {
+  grid-area: dp;
+}
+
+.presentation {
+  grid-area: presentation;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.studies-container {
+  grid-area: studies;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.certificates {
+  grid-area: certificates;
+}
+
+.philosophy {
+  grid-area: philosophy;
 }
 
 a {
@@ -49,3 +89,16 @@ a {
 .d-grid {
   display: grid;
 }
+
+/* FLEX */
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
