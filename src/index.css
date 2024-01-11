@@ -1,103 +1,130 @@
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 body .generalContainer {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    100%
-  );
-  grid-template-areas:
-    "header"
-    "dp"
-    "presentation"
-    "experience"
-    "philosophy"
-    "education"
-    "skills"
-    "certificates";
-  /* grid-auto-rows: 300px; */
-  background-color: #FAFAFA;
-  /* width: 100vw; */
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 100%);
+	grid-template-areas:
+		'header'
+		'dp'
+		'presentation'
+		'experience'
+		'philosophy'
+		'education'
+		'skills'
+		'certificates';
+	/* grid-auto-rows: 300px; */
+	background-color: #fafafa;
+	/* width: 100vw; */
 }
 
 @media (min-width: 1024px) {
-  body .generalContainer {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(320px,50%)
-    );
-  }
+	body .generalContainer {
+		grid-template-columns: repeat(auto-fit, minmax(320px, 50%));
+		grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+
+		grid-template-areas:
+			'header experience'
+			'dp experience'
+			'presentation experience'
+			'studies certificates'
+			'skills philosophy';
+
+		.experience {
+			grid-area: experience;
+		}
+
+		.skills {
+			grid-area: skills;
+		}
+
+		.philosophy {
+			grid-area: philosophy;
+			grid-column: 1 / 2;
+			grid-row: 6 / 7;
+		}
+
+		.certificates {
+			grid-area: certificates;
+			grid-row: 4 / 8;
+			max-height: 65%;
+			overflow: scroll;
+		}
+
+		.studies-container {
+			grid-area: studies;
+		}
+	}
 }
 
 .header {
-  grid-area: header;
+	grid-area: header;
 }
 
 .dp {
-  grid-area: dp;
+	grid-area: dp;
 }
 
 .presentation {
-  grid-area: presentation;
+	grid-area: presentation;
 }
 
 .experience {
-  grid-area: experience;
+	grid-area: experience;
 }
 
 .studies-container {
-  grid-area: studies;
+	grid-area: studies;
 }
 
 .skills {
-  grid-area: skills;
+	grid-area: skills;
 }
 
 .certificates {
-  grid-area: certificates;
+	grid-area: certificates;
 }
 
 .philosophy {
-  grid-area: philosophy;
+	grid-area: philosophy;
 }
 
 a {
-  text-decoration: none;
-  color: #0077B5;
+	text-decoration: none;
+	color: #0077b5;
 }
 
 .b {
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 .b-red {
-  border: 1px solid red;
+	border: 1px solid red;
 }
 
 .b-blue {
-  border: 1px solid blue;
+	border: 1px solid blue;
 }
 
 /* GRID */
 .d-grid {
-  display: grid;
+	display: grid;
 }
 
 /* FLEX */
 .d-flex {
-  display: flex;
+	display: flex;
 }
 
 .d-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
-

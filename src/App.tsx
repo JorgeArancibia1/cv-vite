@@ -12,6 +12,8 @@ import ModuleTemplate from './components/ModuleTemplate';
 import { info } from './data';
 import { Item } from './interfaces';
 
+var {matches} = window.matchMedia("(min-width: 1024px)");
+
 const certificate: Item[] = info[6].items;
 
 function App() {
@@ -75,7 +77,7 @@ function App() {
 			<ModuleTemplate
 				className='philosophy'
 				title='Filosofía de vida'
-				hidden={false}
+				hidden={matches}
 				childrenIcon={info[1].icon}
 			>
 				<Philosophy />

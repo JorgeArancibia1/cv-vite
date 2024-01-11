@@ -10,7 +10,7 @@ import { PiCertificateThin } from "react-icons/pi";
 export const info: Info[] = [
 	{
 		id: 1,
-		icon: <FaUserAlt size={'1.4em'} />,
+		icon: <FaUserAlt size={'1.4em'} color={"#07304a"} />,
 		title: 'DATOS PERSONALES',
 		items: [
 			{
@@ -43,7 +43,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 2,
-		icon: <BsPersonWalking size={'1.6em'} />,
+		icon: <BsPersonWalking size={'1.6em'} color="#f47067" />,
 		title: 'FILOSOFÍA DE VIDA',
 		items: [
 			{
@@ -54,7 +54,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 3,
-		icon: <FaCertificate size={'1.4em'} />,
+		icon: <FaCertificate size={'1.4em'} color="#0a4b70" />,
 		title: 'HABILIDADES',
 		items: [
 			{
@@ -82,7 +82,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 4,
-		icon: <BsPersonRaisedHand size={'1.8em'} />,
+		icon: <BsPersonRaisedHand size={'1.8em'} color="#006649" />,
 		title: 'PRESENTACIÓN',
 		items: [
 			{
@@ -93,7 +93,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 5,
-		icon: <PiStudentFill size={'1.5em'} />,
+		icon: <PiStudentFill size={'1.7em'} color="#0087cb" />,
 		title: 'ESTUDIOS PROFESIONALES',
 		items: [
 			{
@@ -109,7 +109,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 6,
-		icon: <FaBriefcase size={'1.4em'} />,
+		icon: <FaBriefcase size={'1.4em'} color="#3c0011" />,
 		title: 'EXPERIENCIA LABORAL',
 		items: [
 			{
@@ -143,7 +143,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 7,
-		icon: <PiCertificateThin size={'2em'} />,
+		icon: <PiCertificateThin size={'2em'} color="#e1b12c" />,
 		title: 'CERTIFICACIONES',
 		items: [
 			{
