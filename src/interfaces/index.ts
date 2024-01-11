@@ -1,16 +1,18 @@
+import { ReactNode } from 'react';
+
 export interface Items {
-  info: Info[];
+	info: Info[];
 }
 
 export interface Info {
-  id:    number;
-  icon:  string;
-  title: string;
-  items: Item[];
+	id: number;
+	icon: ReactNode;
+	title: string;
+	items: Item[];
 }
 
 export interface Item {
-  item?:   string;
-  content?: string;
-  link?:   string;
+	item?: string;
+	content?: string;
+	link?: string;
 }

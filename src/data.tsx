@@ -1,9 +1,16 @@
 import { Info } from "./interfaces";
+import { FaUserAlt } from 'react-icons/fa';
+import { BsPersonRaisedHand } from "react-icons/bs";
+import { BsPersonWalking } from "react-icons/bs";
+import { FaCertificate } from "react-icons/fa";
+import { PiStudentFill } from "react-icons/pi";
+import { FaBriefcase } from "react-icons/fa6";
+import { PiCertificateThin } from "react-icons/pi";
 
 export const info: Info[] = [
 	{
 		id: 1,
-		icon: 'fas fa-user fontSize',
+		icon: <FaUserAlt size={'1.4em'} />,
 		title: 'DATOS PERSONALES',
 		items: [
 			{
@@ -36,7 +43,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 2,
-		icon: 'fas fa-walking fontSize',
+		icon: <BsPersonWalking size={'1.6em'} />,
 		title: 'FILOSOFÍA DE VIDA',
 		items: [
 			{
@@ -47,7 +54,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 3,
-		icon: 'fas fa-award fontSize',
+		icon: <FaCertificate size={'1.4em'} />,
 		title: 'HABILIDADES',
 		items: [
 			{
@@ -75,7 +82,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 4,
-		icon: 'fas fa-child fontSize',
+		icon: <BsPersonRaisedHand size={'1.8em'} />,
 		title: 'PRESENTACIÓN',
 		items: [
 			{
@@ -86,7 +93,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 5,
-		icon: 'fas fa-university fontSize',
+		icon: <PiStudentFill size={'1.5em'} />,
 		title: 'ESTUDIOS PROFESIONALES',
 		items: [
 			{
@@ -102,7 +109,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 6,
-		icon: 'fas fa-briefcase fontSize',
+		icon: <FaBriefcase size={'1.4em'} />,
 		title: 'EXPERIENCIA LABORAL',
 		items: [
 			{
@@ -136,7 +143,7 @@ export const info: Info[] = [
 	},
 	{
 		id: 7,
-		icon: 'fas fa-paperclip fontSize',
+		icon: <PiCertificateThin size={'2em'} />,
 		title: 'CERTIFICACIONES',
 		items: [
 			{

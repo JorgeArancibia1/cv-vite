@@ -1,23 +1,26 @@
-import { FaUserAlt } from 'react-icons/fa';
 import './index.css';
+import { FC } from 'react';
+
 
 type ModuleTemplateProps = {
 	children: React.ReactNode;
+  childrenIcon: React.ReactNode;
 	title: string;
 	hidden?: boolean;
 	className?: string;
 };
 
-const ModuleTemplate = ({
+const ModuleTemplate: FC<ModuleTemplateProps> = ({
 	children,
+  childrenIcon,
 	title,
 	hidden,
 	className,
-}: ModuleTemplateProps) => {
+}) => {
 	return (
 		<section className={`section-template ${className}`}>
 			<article className='template-row'>
-				<FaUserAlt className='template-icon-title' size={'1.5em'} />
+        {childrenIcon}
 				<h5 className='template-title'>{title}</h5>
 			</article>
 

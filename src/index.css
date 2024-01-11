@@ -6,11 +6,11 @@ body {
 }
 
 body .generalContainer {
-  margin-top: 30px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    100vw
+    100%
   );
   grid-template-areas:
     "header"
@@ -23,15 +23,14 @@ body .generalContainer {
     "certificates";
   /* grid-auto-rows: 300px; */
   background-color: #FAFAFA;
-  border-radius: 5px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 @media (min-width: 1024px) {
   body .generalContainer {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(300px,50%)
+      minmax(320px,50%)
     );
   }
 }

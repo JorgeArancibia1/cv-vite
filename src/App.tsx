@@ -18,7 +18,12 @@ function App() {
 	return (
 		<div className='generalContainer'>
 			<Header className='header' />
-			<ModuleTemplate className='dp' title='Datos personales' hidden={false}>
+			<ModuleTemplate
+				className='dp'
+				title='Datos personales'
+				hidden={false}
+				childrenIcon={info[0].icon}
+			>
 				<PersonalData />
 			</ModuleTemplate>
 
@@ -26,31 +31,53 @@ function App() {
 				className='presentation'
 				title='Presentación'
 				hidden={false}
+				childrenIcon={info[3].icon}
 			>
 				<Presentation />
 			</ModuleTemplate>
 
-			<ModuleTemplate className='experience' title='Experience' hidden={false}>
+			<ModuleTemplate
+				className='experience'
+				title='Experiencia'
+				hidden={false}
+				childrenIcon={info[5].icon}
+			>
 				<Experience items={[]} i={false} a={false} />
 			</ModuleTemplate>
 
-			<ModuleTemplate className='studies' title='Studies' hidden={false}>
+			<ModuleTemplate
+				className='studies'
+				title='Estudios Profesionales'
+				hidden={false}
+				childrenIcon={info[4].icon}
+			>
 				<Studies />
 			</ModuleTemplate>
 
-			<ModuleTemplate className='skills' title='Skills' hidden={true}>
+			<ModuleTemplate
+				className='skills'
+				title='Habilidades'
+				hidden={false}
+				childrenIcon={info[2].icon}
+			>
 				<Skills />
 			</ModuleTemplate>
 
 			<ModuleTemplate
 				className='certificates'
-				title='Certificates'
+				title='Certificados'
 				hidden={true}
+				childrenIcon={info[6].icon}
 			>
 				<Certifications items={certificate} />
 			</ModuleTemplate>
 
-			<ModuleTemplate className='philosophy' title='Philosophy' hidden={false}>
+			<ModuleTemplate
+				className='philosophy'
+				title='Filosofía de vida'
+				hidden={false}
+				childrenIcon={info[1].icon}
+			>
 				<Philosophy />
 			</ModuleTemplate>
 		</div>
