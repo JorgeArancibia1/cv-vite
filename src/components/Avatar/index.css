@@ -14,3 +14,14 @@
   background-position: center;
   border: 1px solid #0093D3;
 }
+
+@media (min-width: 1024px) {
+  .avatar-container {
+    height: 200px;
+  }
+
+  .avatar{
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,5 +1,5 @@
 import { Experience } from './components/Experience';
-import Header from './components/Header';
+import { Header } from './components/Header';
 import { PersonalData } from './components/PersonalData';
 import { Philosophy } from './components/Philosophy';
 import { Presentation } from './components/Presentation';
@@ -12,7 +12,7 @@ import ModuleTemplate from './components/ModuleTemplate';
 import { info } from './data';
 import { Item } from './interfaces';
 
-var {matches} = window.matchMedia("(min-width: 1024px)");
+var { matches } = window.matchMedia('(min-width: 1024px)');
 
 const certificate: Item[] = info[6].items;
 

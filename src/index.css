@@ -19,22 +19,25 @@ body .generalContainer {
 		'education'
 		'skills'
 		'certificates';
-	/* grid-auto-rows: 300px; */
 	background-color: #fafafa;
-	/* width: 100vw; */
 }
 
 @media (min-width: 1024px) {
+	body {
+		font-size: 20px;
+	}
+
 	body .generalContainer {
 		grid-template-columns: repeat(auto-fit, minmax(320px, 50%));
-		grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+		grid-template-rows: repeat(auto-fit, minmax(auto-fill, 1fr));
 
 		grid-template-areas:
 			'header experience'
 			'dp experience'
 			'presentation experience'
 			'studies certificates'
-			'skills philosophy';
+			'skills philosophy'
+			;
 
 		.experience {
 			grid-area: experience;
@@ -126,5 +129,6 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	gap: 5px;
 }

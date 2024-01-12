@@ -5,9 +5,9 @@ type HeaderProps = {
 	className: string;
 };
 
-const Header = ({className}: HeaderProps) => {
+export const Header = ({className}: HeaderProps) => {
 	return (
-		<section className={`${className}`}>
+		<section className={` d-flex-center ${className}`}>
 			<div className='avatar-container'>
 				<Avatar />
 			</div>
@@ -19,5 +19,3 @@ const Header = ({className}: HeaderProps) => {
 		</section>
 	);
 };
-
-export default Header;
