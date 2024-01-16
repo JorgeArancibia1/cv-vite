@@ -2,7 +2,7 @@
   "name": "cv-vite-react",
   "private": true,
   "version": "1.0.1",
-  "homepage": "https://jorgearancibia1.github.io",
+  "homepage": "https://jorgearancibia1.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
