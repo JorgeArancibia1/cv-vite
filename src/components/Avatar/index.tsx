@@ -1,4 +1,4 @@
-import "./index.css";
+import './index.css';
 
 export const Avatar = () => {
 	return <div className='avatar' />;
