@@ -1,7 +1,6 @@
 import './index.css';
 import { FC } from 'react';
 
-
 type ModuleTemplateProps = {
 	children: React.ReactNode;
   childrenIcon: React.ReactNode;
@@ -10,17 +9,17 @@ type ModuleTemplateProps = {
 	className?: string;
 };
 
-const ModuleTemplate: FC<ModuleTemplateProps> = ({
+const ModuleTemplate: FC<ModuleTemplateProps> = ( {
 	children,
-  childrenIcon,
+	childrenIcon,
 	title,
 	hidden,
 	className,
-}) => {
+} ) => {
 	return (
 		<section className={`section-template ${className}`}>
 			<article className='template-row'>
-        {childrenIcon}
+				{childrenIcon}
 				<h5 className='template-title'>{title}</h5>
 			</article>
 

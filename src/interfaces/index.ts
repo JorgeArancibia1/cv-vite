@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
-
-export interface Items {
-	info: Info[];
+export interface Item {
+	item: string | ReactNode;
+	content?: string;
+	link?: string;
 }
 
 export interface Info {
@@ -11,8 +12,18 @@ export interface Info {
 	items: Item[];
 }
 
-export interface Item {
-	item?: string;
-	content?: string;
-	link?: string;
+export interface Items {
+	info: Info[];
 }
+
+export type standardPropsItem = {
+	item: Item[] | [];
+};
+
+export type standardPropsItems = {
+	items: Item[] | [];
+};
+
+export type presentationProps = {
+	description: Item[] | [];
+};

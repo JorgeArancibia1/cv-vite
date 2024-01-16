@@ -12,9 +12,15 @@ import ModuleTemplate from './components/ModuleTemplate';
 import { info } from './data';
 import { Item } from './interfaces';
 
-var { matches } = window.matchMedia('(min-width: 1024px)');
+const { matches } = window.matchMedia( '(min-width: 1024px)' );
 
-const certificate: Item[] = info[6].items;
+const personalDataItems: Item[] = info[0].items;
+const philosophyData: Item[] = info[1].items;
+const skillsItems: Item[] = info[2].items;
+const presentationData: Item[] = info[3].items;
+const studiesItems: Item[] = info[4].items;
+const experienceItems: Item[] = info[5].items;
+const certificateItems: Item[] = info[6].items;
 
 function App() {
 	return (
@@ -26,7 +32,7 @@ function App() {
 				hidden={false}
 				childrenIcon={info[0].icon}
 			>
-				<PersonalData />
+				<PersonalData items={personalDataItems} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -35,7 +41,7 @@ function App() {
 				hidden={false}
 				childrenIcon={info[3].icon}
 			>
-				<Presentation />
+				<Presentation description={presentationData} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -44,7 +50,7 @@ function App() {
 				hidden={false}
 				childrenIcon={info[5].icon}
 			>
-				<Experience items={[]} i={false} a={false} />
+				<Experience items={experienceItems} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -53,7 +59,7 @@ function App() {
 				hidden={false}
 				childrenIcon={info[4].icon}
 			>
-				<Studies />
+				<Studies items={studiesItems} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -62,7 +68,7 @@ function App() {
 				hidden={false}
 				childrenIcon={info[2].icon}
 			>
-				<Skills />
+				<Skills items={skillsItems} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -71,7 +77,7 @@ function App() {
 				hidden={true}
 				childrenIcon={info[6].icon}
 			>
-				<Certifications items={certificate} />
+				<Certifications items={certificateItems} />
 			</ModuleTemplate>
 
 			<ModuleTemplate
@@ -80,7 +86,7 @@ function App() {
 				hidden={matches}
 				childrenIcon={info[1].icon}
 			>
-				<Philosophy />
+				<Philosophy item={philosophyData} />
 			</ModuleTemplate>
 		</div>
 	);

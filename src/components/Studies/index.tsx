@@ -1,22 +1,18 @@
+import { FC } from 'react';
+import { standardPropsItems } from '../../interfaces';
 import { Description } from '../Description';
 import './index.css';
-// type Props = {}
 
-export const Studies = () => {
-	return (
-		<div className='studies'>
-			<Description
-				dTitle={'2019 - 2021'}
-				description={
-					'Centro de formación técnica INACAP - Analista programador.'
-				}
-			/>
-			<Description
-				dTitle={'2014-2017'}
-				description={
-					'Instituto profesional DUOC UC - Ingeniero en mecánica automotriz.'
-				}
-			/>
-		</div>
-	);
-};
+export const Studies: FC<standardPropsItems> = ( { items } ) => (
+	<div className='studies'>
+		{
+			items.map( ( { item, content }, index ) => (
+				<Description
+					key={index}
+					dTitle={item ? String( item ) : ''}
+					description={content}
+				/>
+			) )
+		}
+	</div>
+);

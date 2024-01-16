@@ -1,11 +1,11 @@
-import { Avatar } from "../Avatar";
-import "./index.css";
+import { Avatar } from '../Avatar';
+import './index.css';
 
 type HeaderProps = {
 	className: string;
 };
 
-export const Header = ({className}: HeaderProps) => {
+export const Header = ( { className }: HeaderProps ) => {
 	return (
 		<section className={` d-flex-center ${className}`}>
 			<div className='avatar-container'>

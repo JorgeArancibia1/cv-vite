@@ -1,0 +1,16 @@
+name: ci-cd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  nombre:
+    runs-on: ubuntu-22.04.3
+    steps:
+      - name: Ejecutando...
+        run: echo "Se está ejecutando"
+      - name: Dime la fecha
+        run: date
+      - run: ls -l

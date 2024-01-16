@@ -1,9 +1,9 @@
-import './index.css'
+import { FC } from 'react';
+import './index.css';
+import { presentationProps } from '../../interfaces';
 
-export const Presentation = () => {
-  return (
-    <article className="presentation-container">
-      <p className='presentation-text'>Frontend developer, Ingeniero en mecánica automotriz y titulado de la carrera Analista programador de INACAP. Capacitado para trabajar como desarrollador web, con aspiraciones de perfeccionar conocimientos principalmente en el área frontend. Apasionado por la programación y actualmente buscando oportunidades para seguir creciendo en el área. Me encanta Javascript ♡.</p>
-    </article>
-  )
-}
+export const Presentation: FC<presentationProps> = ( { description } ) => (
+	<article className="presentation-container">
+		<p className='presentation-text'>{description[0].content}</p>
+	</article>
+);

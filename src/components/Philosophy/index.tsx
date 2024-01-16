@@ -1,11 +1,10 @@
-import './index.css'
-import { FaStar } from "react-icons/fa";
-// type Props = {}
+import { FC } from 'react';
+import './index.css';
+import { standardPropsItem } from '../../interfaces';
 
-export const Philosophy = () => {
-  return (
-    <div className="Philosophy d-flex-center">
-      <FaStar color='#FFCC02' /><p>"Sigue un solo camino hasta alcanzar el éxito".</p>
-    </div>
-  )
-}
+export const Philosophy: FC<standardPropsItem> = ( { item } ) => (
+	<div className='Philosophy'>
+		{item[0].item}
+		<span>{item[0].content}</span>
+	</div>
+);

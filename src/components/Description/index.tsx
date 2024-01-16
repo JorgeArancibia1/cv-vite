@@ -4,15 +4,15 @@ type DescriptionProps = {
 	className?: string;
 	dTitle: string;
 	dJob?: string;
-	description: string;
+	description?: string;
 };
 
-export const Description = ({
+export const Description = ( {
 	className,
 	dTitle,
 	dJob,
 	description,
-}: DescriptionProps) => {
+}: DescriptionProps ) => {
 	return (
 		<section className={`${className}`}>
 			<dl>
