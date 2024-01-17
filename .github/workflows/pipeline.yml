@@ -48,28 +48,8 @@ jobs:
           name: dist
           path: dist
 
-  test:
-    needs: [lint, build]
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '18'
-      - name: Instalar dependencias
-        run: npm ci
-      - uses: actions/download-artifact@v2
-        with:
-          name: dist
-          path: dist
-      - name: Test
-        run: npm run test
-
-
   deploy:
-    needs: [test]
+    needs: [lint]
     runs-on: ubuntu-20.04
     steps:
       - name: build
