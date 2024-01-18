@@ -21,7 +21,8 @@
     },
     "ignorePatterns": ["temp.js", "**/vendor/*.js", "next-env.d.ts"],
     "rules": {
-      "key-spacing": ["error", { "beforeColon": false,"afterColon": false, "mode": "strict" }],
+      // "key-spacing": ["error", { "beforeColon": false,"afterColon": false, "mode": "false" }],
+      // "space-in-parens": ["error", "always"],
       "indent": ["error", "tab"],
       "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
       "linebreak-style": ["error", "unix"],
@@ -44,7 +45,6 @@
         "objectsInObjects": false,
         "arraysInObjects": false
       }],
-      "space-in-parens": ["error", "always"],
       "space-infix-ops": ["error", { "int32Hint": false }],
       "computed-property-spacing": ["error", "never", { "enforceForClassMembers": true }],
       "array-bracket-spacing": ["error", "always", {

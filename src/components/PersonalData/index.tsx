@@ -1,5 +1,5 @@
 import './index.css';
-import { FC } from 'react';
+import { FC, Fragment } from 'react';
 import { standardPropsItems } from '../../interfaces';
 
 export const PersonalData: FC<standardPropsItems> = ( { items } ) => (
@@ -7,10 +7,10 @@ export const PersonalData: FC<standardPropsItems> = ( { items } ) => (
 		{
 			<div className='pd-container' > {
 				items.map( ( { item, content }, index ) => (
-					<>
+					<Fragment key={index}>
 						{item}
-						<span key={index}>{content}</span>
-					</>
+						<span>{content}</span>
+					</Fragment>
 				) )
 			}
 			</div>

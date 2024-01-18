@@ -145,3 +145,9 @@ a {
 .mb-1 {
 	margin-bottom: 1rem;
 }
+
+.buttonToggle {
+	max-width: 100px;
+	max-height: 50px;
+	position: absolute;
+}
