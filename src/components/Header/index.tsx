@@ -12,8 +12,8 @@ export const Header = ( { className }: HeaderProps ) => {
 				<Avatar />
 			</div>
 			<div className="principal-text-container">
-				<h1 className='texto'>
-					Jorge Eduardo <p> Arancibia Leiva</p>
+				<h1 className='texto m-0 mb-1' >
+					Jorge Eduardo <p className='m-0'> Arancibia Leiva</p>
 				</h1>
 			</div>
 		</section>
