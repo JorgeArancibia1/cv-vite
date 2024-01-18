@@ -63,3 +63,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          clean: true
