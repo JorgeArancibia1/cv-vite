@@ -52,11 +52,11 @@ jobs:
     needs: [lint]
     runs-on: ubuntu-20.04
     steps:
-      - name: build
-        run: npm i && run build
+      - name: Identificar
+        run: ls
       - name: deploy
         if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: main
+          branch: gh-pages
           folder: dist
