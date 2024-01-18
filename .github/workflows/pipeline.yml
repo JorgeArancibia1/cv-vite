@@ -52,6 +52,9 @@ jobs:
     needs: [lint]
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: build
         run: npm i && run build
       - name: deploy
