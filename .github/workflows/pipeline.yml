@@ -61,6 +61,7 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
+          token: ${{ github.token }}
           branch: gh-pages
           folder: dist
           clean: true
