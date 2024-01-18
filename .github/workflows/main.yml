@@ -1,16 +1,23 @@
-name: ci-cd
+name: React App Github Deploy
 
 on:
   push:
     branches:
-      - main
+      - "master"
 
 jobs:
-  nombre:
-    runs-on: ubuntu-22.04.3
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Ejecutando...
-        run: echo "Se está ejecutando"
-      - name: Dime la fecha
-        run: date
-      - run: ls -l
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install & build
+        run: npm i && npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: dist
