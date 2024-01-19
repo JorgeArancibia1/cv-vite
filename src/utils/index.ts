@@ -1,4 +1,4 @@
-// @ts-nocheck
+// Compiler warns about unreachable code error
 import { TFunction } from 'i18next';
 import { Item } from '../interfaces';
 

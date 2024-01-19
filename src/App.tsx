@@ -1,4 +1,4 @@
-// @ts-nocheck
+// Compiler warns about unreachable code error
 
 import { Certifications } from './components/Certifications';
 import { Experience } from './components/Experience';
