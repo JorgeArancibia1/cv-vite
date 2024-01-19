@@ -16,7 +16,6 @@ import { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { info } from './data';
 import { useChangeLanguage } from './hooks/useChangeLanguage';
-import { transformMixData } from './utils';
 
 const { matches } = window.matchMedia('(min-width: 1024px)');
 
@@ -25,24 +24,71 @@ const App = () => {
 
 	// PERSONAL DATA
 	const personalDataItems = info[0].items;
-	personalDataItems[5].content = t('info.items.5.content');
+	personalDataItems[5].content = t( 'info.items.5.content' );
 
 	// PHILOSOPHY
 	const philosophyData = info[1].items;
-	philosophyData[0].content = t('philosophy.items.0.content');
+	philosophyData[0].content = t( 'philosophy.items.0.content' );
 	// SKILLS
-	const skillsItems = transformMixData( info[2].items, t, 'skills');
-
+	const skillsItems = info[2].items;
+	skillsItems[0].item = t( 'skills.items.0.item' );
+	skillsItems[0].content = t( 'skills.items.0.content' );
+	skillsItems[1].item = t( 'skills.items.1.item' );
+	skillsItems[1].content = t( 'skills.items.1.content' );
+	skillsItems[2].item = t( 'skills.items.2.item' );
+	skillsItems[3].item = t( 'skills.items.3.item' );
+	skillsItems[4].item = t( 'skills.items.4.item' );
 	// PRESENTATION
-	const presentationData = transformMixData( info[3].items, t, 'presentation');
+	const presentationData = info[3].items;
+	presentationData[0].content = t( 'presentation.items.0.content' );
 
 	// STUDIES
-	const studiesItems = transformMixData( info[4].items, t, 'studies');
+	const studiesItems = info[4].items;
+	studiesItems[0].content = t( 'studies.items.0.content' );
+	studiesItems[1].content = t( 'studies.items.1.content' );
 
-	// EXPERIENCE
-	const experienceItems = transformMixData( info[5].items, t, 'experience' );
+	const experienceItems = info[5].items;
+	experienceItems[0].item = t( 'experience.items.0.item' );
+	experienceItems[0].content = t( 'experience.items.0.content' );
+	experienceItems[1].content = t( 'experience.items.1.content' );
 
-	const certificateItems = transformMixData( info[6].items, t, 'certifications' );
+	experienceItems[2].item = t( 'experience.items.2.item' );
+	experienceItems[3].content = t( 'experience.items.2.content' );
+	experienceItems[3].content = t( 'experience.items.3.content' );
+
+	experienceItems[4].item = t( 'experience.items.4.item' );
+	experienceItems[4].content = t( 'experience.items.4.content' );
+	experienceItems[5].content = t( 'experience.items.5.content' );
+
+	experienceItems[6].item = t( 'experience.items.6.item' );
+	experienceItems[6].content = t( 'experience.items.6.content' );
+	experienceItems[7].content = t( 'experience.items.7.content' );
+
+	const certificateItems = info[6].items;
+	certificateItems[0].content = t( 'certifications.items.0.content' );
+	certificateItems[1].content = t( 'certifications.items.1.content' );
+	certificateItems[2].content = t( 'certifications.items.2.content' );
+	certificateItems[3].content = t( 'certifications.items.3.content' );
+	certificateItems[4].content = t( 'certifications.items.4.content' );
+	certificateItems[5].content = t( 'certifications.items.5.content' );
+	certificateItems[6].content = t( 'certifications.items.6.content' );
+	certificateItems[7].content = t( 'certifications.items.7.content' );
+	certificateItems[8].content = t( 'certifications.items.8.content' );
+	certificateItems[9].content = t( 'certifications.items.9.content' );
+	certificateItems[10].content = t( 'certifications.items.10.content' );
+	certificateItems[11].content = t( 'certifications.items.11.content' );
+	certificateItems[12].content = t( 'certifications.items.12.content' );
+	certificateItems[13].content = t( 'certifications.items.13.content' );
+	certificateItems[14].content = t( 'certifications.items.14.content' );
+	certificateItems[15].content = t( 'certifications.items.15.content' );
+	certificateItems[16].content = t( 'certifications.items.16.content' );
+	certificateItems[17].content = t( 'certifications.items.17.content' );
+	certificateItems[18].content = t( 'certifications.items.18.content' );
+	certificateItems[19].content = t( 'certifications.items.19.content' );
+	certificateItems[20].content = t( 'certifications.items.20.content' );
+	certificateItems[21].content = t( 'certifications.items.21.content' );
+	certificateItems[22].content = t( 'certifications.items.22.content' );
+	certificateItems[23].content = t( 'certifications.items.23.content' );
 
 	const { isEnglish, changeLanguage } = useChangeLanguage(i18n);
 
