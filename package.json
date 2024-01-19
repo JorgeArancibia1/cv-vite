@@ -12,12 +12,12 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "toc": "i18next-rosources-for-ts toc -i ./public/locales/en -o ./src/@types/resources.ts",
-    "interface": "i18next-rosources-for-ts interface -i ./public/locales/en -o ./src/@types/resources.d.ts"
+    "toc": "i18next-rosources-for-ts toc -i ./src/locales/en -o ./src/@types/resources.ts",
+    "interface": "i18next-rosources-for-ts interface -i ./src/locales/en -o ./src/@types/resources.d.ts"
   },
   "dependencies": {
     "i18next": "23.7.16",
-    "i18next-http-backend": "^2.4.2",
+    "i18next-http-backend": "2.4.2",
     "i18next-resources-for-ts": "1.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
