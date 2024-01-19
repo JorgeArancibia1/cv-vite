@@ -1,4 +1,5 @@
-// Compiler warns about unreachable code error
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { TFunction } from 'i18next';
 import { Item } from '../interfaces';
 

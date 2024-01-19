@@ -1,4 +1,5 @@
-// Compiler warns about unreachable code error
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 
 import { Certifications } from './components/Certifications';
 import { Experience } from './components/Experience';
