@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 export interface Item {
-	item: string | ReactNode;
+	item?: string | ReactNode;
 	content?: string;
 	link?: string;
 }
