@@ -1,8 +1,6 @@
-# Proyecto CV
-
 [![Deployment Pipeline](https://github.com/JorgeArancibia1/cv-vite/actions/workflows/pipeline.yml/badge.svg)](https://github.com/JorgeArancibia1/cv-vite/actions/workflows/pipeline.yml)
 
-# Curriculum vitae
+# Proyecto Curriculum vitae
 
 En este proyecto construí mi curriculum utilizando **React.js** con **Typescript**, usé **CSS** nativo para los estilos, utilizando **GRID CSS** y le añadí **i18next** para agregarle una feature de cambio de idioma Inglés-Español.
 
