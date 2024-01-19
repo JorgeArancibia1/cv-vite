@@ -1,4 +1,3 @@
-// eslint-disable-file
 import { BsPersonRaisedHand, BsPersonWalking } from 'react-icons/bs';
 import { CgMail } from 'react-icons/cg';
 import {
