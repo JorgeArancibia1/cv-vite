@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Certifications } from './components/Certifications';
 import { Experience } from './components/Experience';
 import { Header } from './components/Header';

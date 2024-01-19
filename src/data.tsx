@@ -1,5 +1,4 @@
 // eslint-disable-file
-import i18next from 'i18next';
 import { BsPersonRaisedHand, BsPersonWalking } from 'react-icons/bs';
 import { CgMail } from 'react-icons/cg';
 import {
@@ -45,7 +44,7 @@ export const info: Info[] = [
 			},
 			{
 				item: <FaFlag color='#D30026' />,
-				content: i18next.t('info.items.5.content'),
+				content: 'Chileno',
 			},
 		],
 	},
@@ -56,7 +55,7 @@ export const info: Info[] = [
 		items: [
 			{
 				item: <FaStar color='#FFCC02' />,
-				content: i18next.t('pylosophy.items.0.content'),
+				content: '"Sigue un solo camino hasta alcanzar el éxito".',
 			},
 		],
 	},
@@ -66,24 +65,24 @@ export const info: Info[] = [
 		title: 'HABILIDADES',
 		items: [
 			{
-				item: i18next.t('skills.items.0.item'),
-				content: i18next.t('skills.items.0.content'),
+				item: 'Dominio de Inglés escrito:',
+				content: 'Intermedio.',
 			},
 			{
-				item: i18next.t('skills.items.1.item'),
-				content: i18next.t('skills.items.1.content'),
+				item: 'Dominio de Inglés hablado:',
+				content: 'Básico.',
 			},
 			{
-				item: i18next.t('skills.items.2.item'),
+				item: 'Fortalezas:',
 				content: 'GIT, HTML, CSS, Bootstrap, JavaScript, React.js.',
 			},
 			{
-				item: i18next.t('skills.items.3.item'),
+				item: 'Otras:',
 				content:
 					'Vue.js, Next.js, Mongo DB, PostgrSQL, Sass, Node.js, Java SE, MySQL.',
 			},
 			{
-				item: i18next.t('skills.items.4.item'),
+				item: 'Sistemas Operativos:',
 				content: 'Windows, Mac y Linux(Debian, Ubuntu).',
 			},
 		],
@@ -95,7 +94,8 @@ export const info: Info[] = [
 		items: [
 			{
 				item: '',
-				content: i18next.t('presentation.items.0.content'),
+				content:
+					'Frontend developer, Ingeniero en mecánica automotriz y titulado de la carrera Analista programador de INACAP. Capacitado para trabajar como desarrollador web, con aspiraciones de perfeccionar conocimientos principalmente en el área frontend. Apasionado por la programación y actualmente buscando oportunidades para seguir creciendo en el área. Me encanta Javascript ♡.',
 			},
 		],
 	},
@@ -106,11 +106,12 @@ export const info: Info[] = [
 		items: [
 			{
 				item: '2019 - 2021',
-				content: i18next.t('studies.items.0.content'),
+				content: 'Centro de formación técnica INACAP - Analista programador.',
 			},
 			{
 				item: '2014-2017',
-				content: i18next.t('studies.items.1.content'),
+				content:
+					'Instituto profesional DUOC UC - Ingeniero en mecánica automotriz.',
 			},
 		],
 	},
@@ -120,141 +121,144 @@ export const info: Info[] = [
 		title: 'EXPERIENCIA LABORAL',
 		items: [
 			{
-				item: i18next.t('experience.items.0.item'),
-				content: i18next.t('experience.items.0.content'),
+				item: 'Agosto 2023 - Actualidad',
+				content: 'Desarrollador de front-end - Hostyweb spa',
 			},
 			{
 				item: '',
-				content: i18next.t('experience.items.1.content'),
+				content:
+					'Dentro de mis deberes están el desarrollar junto con un equipo de trabajo, un aplicativo web para un cliente, utilizando React.js, Typescript y Redux toolkit. Para ello se crea cada una de las nuevas características con sus respectivos test usando Jest.js',
 			},
 			{
-				item: i18next.t('experience.items.2.item'),
-				content: i18next.t('experience.items.2.content'),
-			},
-			{
-				item: '',
-				content: i18next.t('experience.items.3.content'),
-			},
-			{
-				item: i18next.t('experience.items.4.item'),
-				content: i18next.t('experience.items.4.content'),
+				item: 'Julio 2022 - Noviembre 2022',
+				content: 'Frontend developer - RentApp',
 			},
 			{
 				item: '',
-				content: i18next.t('experience.items.5.content'),
+				content:
+					'Dentro de mis funciones estaban: Trabajar en dos proyectos distintos, en uno se trabaja con React.js, con Apollo y material-ui, en donde mis labores están principalmente en modificar features ya existentes y corregir bugs de la aplicación web. En el segundo proyecto, lo realicé desde cero con la tecnología de Next.js, estaba a cargo de él, lo que significó trabajar en él desde cero, construir nuevas características según se requerían y el manejo y control de bugs de la aplicación.',
 			},
 			{
-				item: i18next.t('experience.items.6.item'),
-				content: i18next.t('experience.items.6.content'),
+				item: 'Diciembre 2020 - Septiembre 2021',
+				content: 'Software developer - Waypoint Telecomunicaciones S.A.',
 			},
 			{
 				item: '',
-				content: i18next.t('experience.items.7.content'),
+				content:
+					'Dentro de mis funciones estaban: Desarrollar productos nuevos con Vue.js, resolver diferentes features con Java o React Native, también trabajé con bases de datos PostgreSQL, además de ocupar AWS para el servicio en la nube.',
+			},
+			{
+				item: 'Julio – Septiembre 2019',
+				content: 'Pasante - Sáltala by HC Partners.',
+			},
+			{
+				item: '',
+				content:
+					'El trabajo consistía en el desarrollo de una página web con React.js para la empresa junto a un equipo de personas.',
 			},
 		],
 	},
 	{
 		id: 7,
 		icon: <PiCertificateFill size={'2em'} color='#44bd32' />,
-		title: i18next.t('certifications.title'),
-		items: [
+		title: 'CERTIFICACIONES',
+		items:[
 			{
 				item: '2020',
-				content: i18next.t('certifications.items.0.content'),
+				content: 'Curso profesional de Backend'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.1.content'),
+				content: 'Curso de Webpack'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.2.content'),
+				content: 'Curso de React Router'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.3.content'),
+				content: 'Curso de React.JS'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.4.content'),
+				content: 'Curso de SQL y MySQL'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.5.content'),
+				content: 'Curso de animaciones para la web'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.6.content'),
+				content: 'Curso de Bootstrap'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.7.content'),
+				content: 'Curso de Responsive Design'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.8.content'),
+				content: 'Curso de CSS Grid Layout'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.8.content'),
+				content: 'Curso de JQuery a JavaScript'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.9.content'),
+				content: 'Curso de Programación funcional en JavaScript'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.10.content'),
+				content: 'Curso de HTML y CSS'
 			},
 			{
 				item: '2019',
-				content: i18next.t('certifications.items.11.content'),
+				content: 'Curso de Fundamentos de JavaScript'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.12.content'),
+				content: 'Curso profesional de Git y Github'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.13.content'),
+				content: 'Curso de desarrollo web online'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.14.content'),
+				content: 'Curso de Algoritmos con C'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.15.content'),
+				content: 'Curso de Fundamentos de Bases de Datos'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.16.content'),
+				content: 'Curso de Java Avanzado SE'
+			},
+			{
+				'content': 'Curso Básico de Java SE'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.17.content'),
+				content: 'Fundamentos de Ingeniería de software'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.18.content'),
+				content: 'Curso de redes de internet'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.19.content'),
+				content: 'Introducción a Terminal y línea de comandos'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.20.content'),
+				content: 'Curso gratis de programación Básica'
 			},
 			{
 				item: '2018',
-				content: i18next.t('certifications.items.21.content'),
-			},
-			{
-				item: '2018',
-				content: i18next.t('certifications.items.22.content'),
-			},
-		],
+				content: 'Curso de Fundamentos de Electricidad y Electrónica'
+			}
+		]
 	},
 	// eslint-disable-next-line eol-last
 ];

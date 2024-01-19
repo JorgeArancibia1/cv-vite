@@ -1,5 +1,5 @@
-import { TFunction, i18n } from 'i18next';
-import { Dispatch, SetStateAction } from 'react';
+// @ts-nocheck
+import { TFunction } from 'i18next';
 import { Item } from '../interfaces';
 
 export const transformMixData = ( data: Item[], t: TFunction<[string], undefined>, element: string) => {
@@ -11,14 +11,4 @@ export const transformMixData = ( data: Item[], t: TFunction<[string], undefined
 				content: t(`${element}.items.${index}.content`)
 			};
 		});
-};
-
-export const changeLanguage = (setIsEnglish: Dispatch<SetStateAction<boolean>>, i18n: i18n): void => {
-	if (i18n.language === 'es') {
-		i18n.changeLanguage('en');
-		setIsEnglish(true);
-	} else if (i18n.language === 'en') {
-		i18n.changeLanguage('es');
-		setIsEnglish(false);
-	}
 };
