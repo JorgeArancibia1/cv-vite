@@ -1,5 +1,5 @@
-import { resources } from './resources';
 import { defaultNS, fallbackNS } from '../../i18n';
+import resources from './resources';
 
 declare module 'i18next' {
   interface CustomTypeOptions {
