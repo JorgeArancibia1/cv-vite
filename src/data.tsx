@@ -235,6 +235,7 @@ export const info: Info[] = [
 				content: 'Curso de Java Avanzado SE'
 			},
 			{
+				item: '2018',
 				'content': 'Curso Básico de Java SE'
 			},
 			{
