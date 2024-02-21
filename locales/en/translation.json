@@ -97,6 +97,14 @@
 				"content": "Among my duties is to develop together with a team, a web application for a customer, using React.js, Typescript y Redux toolkit. For this purpose, each of the new features is created with their respective tests using Jest.js."
 			},
 			{
+				"item": "April 2023 - May 2023",
+				"content": "Front-end developer - Black TI"
+			},
+			{
+				"item": "",
+				"content": "Together with a development team, we built an internal web application for Casa Ideas,going through the entire planning and development process, using GIT, Gitea, Eslint, Vue 3, Typescript, Pinia, Docker and Vue test utils for testing."
+			},
+			{
 				"item": "July 2022 - November 2022",
 				"content": "Frontend developer - RentApp"
 			},
