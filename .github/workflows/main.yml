@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Mostrar Hello world
         run: echo "Hello, world!"
+
+      - name: Donde estoy
+        run: pwd
