@@ -17,4 +17,4 @@ jobs:
         run: pwd
 
       - name: Que hay en la carpeta
-        run: ls -lah
+        run: ls
