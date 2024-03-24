@@ -129,6 +129,22 @@ export const info: Info[] = [
 					'Dentro de mis deberes están el desarrollar junto con un equipo de trabajo, un aplicativo web para un cliente, utilizando React.js, Typescript y Redux toolkit. Para ello se crea cada una de las nuevas características con sus respectivos test usando Jest.js',
 			},
 			{
+				'item': 'Abril 2023 - Mayo 2023',
+				'content': 'Front-end developer - Black TI'
+			},
+			{
+				'item': '',
+				'content': 'Junto a un equipo de desarrollo, se construyó una aplicación web interna para Casa Ideas, pasando por todo el proceso de planificación y desarrollo, utilizando GIT, Gitea, Eslint, Vue 3, Typescript, Pinia, Docker y Vue test utils para las pruebas.'
+			},
+			{
+				'item': 'Diciembre 2022 - Abril 2023',
+				'content': 'Desarrollador Fullstack - PolyShop'
+			},
+			{
+				'item': '',
+				'content': 'Se desarrolló una aplicación web desde cero utilizando el framework de Next.js, se utilizó Strapi en el Backend, almacenamiento de imágenes de los productos en el S3 de AWS y Stripe como medio de pago para elaborar un E-commerce para una tienda de ropa americana.'
+			},
+			{
 				item: 'Julio 2022 - Noviembre 2022',
 				content: 'Frontend developer - RentApp',
 			},

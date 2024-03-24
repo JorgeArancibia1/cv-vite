@@ -49,7 +49,7 @@ const App = () => {
 	return (
 		<Suspense fallback='Cargando'>
 			<div className='generalContainer'>
-				<button className={isEnglish ? 'languageButton buttonToggleES' : ' languageButton buttonToggleEN'} onClick={() => changeLanguage()}></button>
+				<div className={isEnglish ? 'languageButton buttonToggleES' : ' languageButton buttonToggleEN'} onClick={() => changeLanguage()}></div>
 				<Header className='header' />
 				<ModuleTemplate
 					className='dp'

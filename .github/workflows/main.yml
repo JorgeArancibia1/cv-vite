@@ -16,5 +16,3 @@ jobs:
       - name: Donde estoy
         run: pwd
 
-      - name: Que hay en la carpeta
-        run: ls

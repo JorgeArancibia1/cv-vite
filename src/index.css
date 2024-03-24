@@ -35,8 +35,9 @@ body .generalContainer {
 			'header experience'
 			'dp experience'
 			'presentation experience'
-			'studies certificates'
-			'skills philosophy'
+			'studies experience'
+			'skills certificates'
+			'phylosophy certificates'
 			;
 
 		.experience {
@@ -55,8 +56,8 @@ body .generalContainer {
 
 		.certificates {
 			grid-area: certificates;
-			grid-row: 4 / 8;
-			max-height: 65%;
+			grid-row: 5 / 8;
+			max-height: 50%;
 			overflow: scroll;
 		}
 
@@ -147,20 +148,22 @@ a {
 }
 
 .languageButton {
-	width: 50px;
+	width: 65px;
 	height: 50px;
 	position: absolute;
 	background-size: contain;
-	border-radius: 50px;
+	background-attachment: local;
+	background-repeat: no-repeat;
+	/* border-radius: 50px; */
 	border: 0;
 	left: 20px;
 	cursor: pointer;
 }
 
 .buttonToggleES {
-	background-image: url(./assets/spain.png);
+	background-image: url(./assets/espana.png);
 }
 
 .buttonToggleEN {
-	background-image: url(./assets/english.png);
+	background-image: url(./assets/usa.png);
 }

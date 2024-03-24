@@ -105,6 +105,14 @@
 				"content": "Together with a development team, we built an internal web application for Casa Ideas,going through the entire planning and development process, using GIT, Gitea, Eslint, Vue 3, Typescript, Pinia, Docker and Vue test utils for testing."
 			},
 			{
+				"item": "December 2022 - April 2023",
+				"content": "Fullstack Developer - PolyShop"
+			},
+			{
+				"item": "",
+				"content": "A web application was developed from scratch using the Next.js framework, Strapi was used in the Backend, product image storage in the AWS S3 and Stripe as a means of payment to develop an E-commerce for an American clothing store."
+			},
+			{
 				"item": "July 2022 - November 2022",
 				"content": "Frontend developer - RentApp"
 			},
