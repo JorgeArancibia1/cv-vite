@@ -4,62 +4,72 @@ on:
   push:
     branches: [main]
   pull_request:
+    # No es necesario ejecutar en PR cerradas si no hacemos nada con ellas.
+    # Si quisieras ejecutar una tarea de limpieza, podrías volver a añadir `types: [closed]`.
     branches: [main]
-    types: [closed]
+
+# Usa el control de concurrencia nativo para cancelar ejecuciones redundantes
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  avoid_reduncy:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Cancel previous redundant builds
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          access_token: ${{ github.token }}
-
   lint:
-    runs-on: ubuntu-20.04
+    name: Lint Code
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Instalar dependencias
+          cache: 'npm' # Añade caché para las dependencias de npm
+      - name: Install dependencies
         run: npm ci
-      - name: Lint
+      - name: Run linter
         run: npm run lint
 
   build:
-    runs-on: ubuntu-20.04
+    name: Build Application
+    runs-on: ubuntu-latest
+    needs: [lint] # Ejecuta la compilación solo si el linting es exitoso
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Instalar dependencias
+          cache: 'npm'
+      - name: Install dependencies
         run: npm ci
-      - name: Build
+      - name: Build project
         run: npm run build
-      - uses: actions/upload-artifact@v2
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
 
   deploy:
-    needs: [lint]
-    runs-on: ubuntu-20.04
+    name: Deploy to GitHub Pages
+    # Este trabajo solo se ejecutará en pushes a la rama main
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: [build] # Depende del trabajo de compilación
+    runs-on: ubuntu-latest
+    # Establece los permisos para el GITHUB_TOKEN
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
+      # No es necesario descargar el código ni compilar de nuevo, usamos el artefacto
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
         with:
-          fetch-depth: 0
-      - name: build and dependencies
-        run: npm ci && npm run build
-      - name: deploy
-        if: ${{ github.event_name == 'push' }}
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+          name: dist
+          path: dist
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
