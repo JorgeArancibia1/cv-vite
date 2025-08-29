@@ -89,7 +89,15 @@
 		"title": "EXPERIENCE",
 		"items": [
 			{
-				"item": "August 2023 - Current",
+				"item": "May 2024 - Current",
+				"content": "Front-end developer - Datamart spa"
+			},
+			{
+				"item": "",
+				"content": "My responsibilities include developing, together with a team, web applications for the financial area, based on designs provided in Figma, using React.js, Material-UI, State Machine, react-hook-form, and TypeScript."
+			},
+			{
+				"item": "August 2023 - March 2024",
 				"content": "Front-end developer - Hostyweb spa"
 			},
 			{

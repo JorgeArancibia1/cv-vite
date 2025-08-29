@@ -89,7 +89,15 @@
 		"title": "EXPERIENCIA LABORAL",
 		"items": [
 			{
-				"item": "Agosto 2023 - Actualidad",
+				"item": "Mayo 2024 - Actualidad",
+				"content": "Desarrollador de front-end - Datamart spa"
+			},
+			{
+				"item": "",
+				"content": "Dentro de mis responsabilidades se encuentra desarrollar, junto a un equipo de trabajo, aplicaciones web para el área financiera, a partir de diseños proporcionados en Figma, utilizando React.js, Material-ui State Machine, react-hook-form y TypeScript."
+			},
+			{
+				"item": "Agosto 2023 - Marzo 2024",
 				"content": "Desarrollador de front-end - Hostyweb spa"
 			},
 			{

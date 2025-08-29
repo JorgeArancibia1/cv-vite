@@ -1,6 +1,6 @@
-import './index.css';
 import { FC, Fragment } from 'react';
 import { standardPropsItems } from '../../interfaces';
+import './index.css';
 
 export const PersonalData: FC<standardPropsItems> = ( { items } ) => (
 	<>
