@@ -62,7 +62,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      # No es necesario descargar el código ni compilar de nuevo, usamos el artefacto
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
